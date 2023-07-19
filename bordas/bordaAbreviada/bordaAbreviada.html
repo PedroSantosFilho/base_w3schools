@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Borda Abreviada CSS</title>
+
+   <!--CONFIGURA O DOCUmENTO HTmL-->
+   <link rel="stylesheet" href="/w3schools/Css/estilo/style.css">
+
+   <!--CONFIGURA OS EXEmPLOS-->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <h1>Propriedade de borda abreviada CSS</h1>
+
+   <p>Há muitas propriedades a serem consideradas ao lidar com bordas.</p>
+
+   <p>Também é possível especificar todas as propriedades de borda individuais em uma propriedade.</p>
+
+   <p>A propriedade <mark>border</mark> é uma propriedade abreviada para as seguintes propriedades de borda individuais:</p>
+
+   <ul>
+      <li><mark>border-width:</mark> largura da borda.</li>
+      <li><mark>border-style</mark> (obrigatório): estilo da borda.</li>
+      <li><mark>border-color:</mark> cor da borda.</li>
+   </ul>
+
+   <h3>Todas as bordas</h3>
+
+   <pre>
+   Exemplo CSS
+   Todas as bordas com largura de 10px, estilo sólido 
+   e cor vermelha
+   p#one { 
+      <mark>border:</mark> 10px solid red;
+      padding: 10px;
+   } </pre>
+
+   <h3>Resultado do Exemplo Acima</h3>
+
+   <pre>
+   <p id="one">Este é um parágrafo com bordas sólidas de 10px vermelhas. </p>
+   </pre>
+   <hr>
+
+   <h3>Borda Esquerda</h3>
+
+   <p>Pode-se especificar todas as propriedades de borda individuais para apenas um lado:</p>
+
+   <pre>>
+   Exemplo CSS
+   Borda Esquerda com 6px de largura, estilo sólido 
+   na cor vermelha
+   p#two {
+      <mark>border-left:</mark> 6px solid red;
+      padding: 10px;
+   }</pre>
+   
+   <h3>Resultado do Exemplo Acima</h3>
+
+   <pre>
+   <p id="two">Este é um parágrafo com a borda Esquerda sólida de 6px e vermelha.</p>
+   </pre>
+   <hr>
+
+   <h3>Borda Inferior</h3>
+
+   <pre>
+      Exemplo CSS
+      Borda inferior com 6px de largura, sólida e vermelha
+      p#three {
+         <mark>border-bottom:</mark> 6px solid red;
+         padding: 10px;
+   }</pre>
+   
+   <h3>Resultado do Exemplo Acima</h3>
+
+   <pre>
+   <p id="three">Este é um parágrafo com a borda Inferior sólida de 6px vermelha.</p>
+   </pre>
+   <hr>
+
+   <h3>Bordas Arredondadas</h3>
+
+   <pre>
+   Exemplo CSS
+   Todas as bordas com largura de 10px, estilo sólido 
+   e cor vermelha
+   p#radio { 
+      <mark>border:</mark> 10px solid red;
+      <mark>border-radius:</mark> 20px; /* Arredonda as bordas 20px */
+      padding: 10px; /* espaço interno de 10px */
+   } </pre>
+
+   <h3>Resultado do Exemplo Acima</h3>
+
+   <pre>
+   <p id="radio">Este é um parágrafo com bordas arredondadas, 
+      sólidas, de 10px na cor vermelha <br> e texto centralizado. </p>
+   </pre>
+   <hr>
+
+</body>
+</html>

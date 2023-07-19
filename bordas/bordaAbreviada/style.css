@@ -1,0 +1,29 @@
+/* todas as bordas */
+p#one {
+   border: 10px solid red;
+   padding: 10px;
+} 
+
+/* Exemplo CSS
+Borda Esquerda com 6px de largura, sólida e vermelha */
+p#two {
+   border-left: 6px solid red;
+   padding: 10px;
+}
+
+/* Exemplo CSS
+Borda inferior com 6px de largura, sólida e vermelha */
+p#three {
+   border-bottom: 6px solid red;
+   padding: 10px;
+}
+
+/* Exemplo CSS
+   Todas as bordas com largura de 10px, estilo sólido 
+   e cor vermelha */
+p#radio { 
+   text-align: center;
+   padding: 10px; /* espaço interno de 10px */
+   border: 10px solid red;
+   border-radius: 20px; /* Arredonda as bordas em 20px */
+} 
