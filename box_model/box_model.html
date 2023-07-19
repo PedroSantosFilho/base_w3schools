@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Box model</title>
+
+   <link rel="stylesheet" href="/w3schools/Css/estilo/style.css">
+
+   <style>
+      div {
+         background-color: lightgrey; /* cor do fundo */
+         color: black; /* cor das letras */
+         width: 300px; /* largura */
+         border: 15px solid green; /* borda largura 15px tipo sólido cor verde */
+         padding: 50px; /* enchimento */
+         margin: 20px auto; /* margem topo e baixo 20px lados esquerdo e direito automático */
+      }
+
+      div#largura { /* parte interna */
+         width: 320px; /* largura 320px */
+         padding: 10px; /* enchimento 10px */
+         border: 5px solid gray; /* borda 10px tipo sólido,cor gray*/
+         margin: 20px auto; /* margem: topo e baixo 20px
+                              lados esquerdo e direito automático */
+      }
+      
+   </style>
+</head>
+<body>
+   <header>
+      <h1>Modelo de Caixa CSS</h1>
+
+      <p>Todos os elementos HTML podem ser considerados como caixas.</p>
+   </header>
+   <hr>
+
+   <main>
+      <section id="introduction">
+         <h2>O modelo de caixa CSS</h2>
+
+         <p>Em CSS, o termo "modelo de caixa" é usado quando se fala em design e layout.</p>
+
+         <p>O modelo de caixa CSS é essencialmente uma caixa que envolve cada elemento HTML. Consiste em: margens, bordas, preenchimento e o conteúdo real. A imagem abaixo ilustra o modelo da caixa:</p>
+
+         <p>Explicação das diferentes partes:</p>
+
+      <pre>
+      &lt;<b>style</b>&gt;
+         <b>div</b> {
+            <b>background-color:</b> lightgrey; /* cor do fundo */
+            <b>color:</b> black; /* cor das letras */
+            <b>width:</b> 300px; /* largura */
+            <b>border:</b> 15px solid green; /* borda -> largura 15px 
+                                       tipo sólido cor verde */
+            <b>padding:</b> 50px; /* enchimento */
+            <b>margin:</b> 20px auto; /* margem topo e baixo 20px 
+                           lados esquerdo e direito automático */
+         }
+      &lt;<b>/style</b>&gt; </pre>
+
+         <ul>
+            <li><strong>Content</strong> - O conteúdo da caixa, onde aparecem texto e imagens</li>
+            <li><strong>Padding</strong> - Limpa uma área ao redor do conteúdo. O enchimento é transparente</li>
+            <li><strong>Border</strong> - Uma borda que contorna o preenchimento e o conteúdo</li>
+            <li><strong>Margin</strong> - Limpa uma área fora da borda. A margem é transparente</li>
+         </ul>
+
+         <p>O modelo de caixa nos permite adicionar uma borda ao redor dos elementos e definir o espaço entre os elementos. </p>
+
+         <h3>Exemplo</h3>
+            
+            <h2>Demonstrando o modelo de caixa</h2>
+
+            <p>O modelo de caixa CSS é essencialmente uma caixa que envolve cada elemento HTML. Consiste em:
+            bordas, preenchimento, margens e o conteúdo real.</p>
+
+            <div>Este texto é o conteúdo da caixa. Adicionamos um preenchimento de 50px, margem de 20px e uma borda verde de 15px. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, eos modi. Necessitatibus sit sunt repudiandae dolor quae. Aut voluptates, fuga itaque debitis, officiis dicta aperiam praesentium esse quae cum maxime?</div>
+      </section>
+      <hr>
+
+      <section id="width_height">
+         <h2>Largura e altura de um elemento</h2>
+
+         <p>Para definir a largura e a altura de um elemento corretamente em todos os navegadores, você precisa saber como funciona o box model.</p>
+         
+         <p><mark>Importante:</mark> Ao definir as propriedades de largura e altura de um elemento com CSS, basta definir a largura e a altura da área de conteúdo . Para calcular o tamanho total de um elemento, você também deve adicionar preenchimento, bordas e margens.</p>
+         
+         <h3>Exemplo</h3>
+
+         <p>Este elemento &lt;<b>div#largura</b>&gt; terá uma largura total de 350px: </div>
+         
+         <pre>
+         &lt;<b>style</b>&gt;
+            <b>div#largura</b> {
+               <b>width:</b> 320px;
+               <b>padding:</b> 20px;
+               <b>border:</b> 10px solid gray;
+               <b>margin:</b> 0;
+            }
+         &lt;<b>/style</b>&gt; </pre>
+
+         <p>Aqui está o cálculo:</p>
+         
+         <ul>
+            <li><b>320px</b> (largura)</li>
+            <li><b> + 20px</b> (preenchimento esquerdo + direito)</li>
+            <li><b> + 10px</b> (borda esquerda + direita)</li>
+            <li><b> + 0px</b> (margem esquerda + direita)</li>
+            <li><b> = </b> 350px</li>
+         </ul>
+
+         <div id="largura">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laudantium id eaque, consequuntur, iusto fugit, maxime voluptatem blanditiis magnam eius accusamus architecto non? Expedita a numquam reprehenderit necessitatibus explicabo ad.
+         </div>
+
+         <p>A largura total de um elemento deve ser calculada assim:</p>
+         
+         <p>Largura total do elemento = largura + preenchimento esquerdo + preenchimento direito + borda esquerda + borda direita + margem esquerda + margem direita</p>
+         
+         <p>A altura total de um elemento deve ser calculada assim:</p>
+         
+         <p>Altura total do elemento = altura + preenchimento superior + preenchimento inferior + borda superior + borda inferior + margem superior + margem inferior.</p>
+      </section>
+   </main>
+   <hr>
+
+</body>
+</html>
