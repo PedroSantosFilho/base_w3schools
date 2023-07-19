@@ -1,0 +1,15 @@
+p#externo { /* p é o seletor */
+   
+   /* cor do fundo azul claro */
+   background-color: lightblue;
+   
+   /* color é a propriedade
+      navy é o valor */
+   color: navy;
+   
+   /* margin-left é a propriedade
+      20px é o valor */ 
+   margin-left: 80px;
+}
+/* cor das letras marinho e a 
+   margem esquerda com 20 pixel */

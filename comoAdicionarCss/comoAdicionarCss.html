@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Como Adicionar CSS</title>
+
+   <!-- CONFIGURA O DOCUMENTO-->
+   <link rel="stylesheet" href="../estilo/style.css">
+
+   <!--EXEMPLO DE CSS EXTERNO-->
+   <link rel="stylesheet" href="mystile.css">
+
+   <!--EXEMPLO DE CSS INTERNO-->
+   <style>
+      p#interno { /* p é o seletor */
+   
+   /* cor do fundo azul claro */
+   background-color: lightblue;
+   
+   /* color é a propriedade
+      navy é o valor */
+   color: navy;
+   
+   /* margin-left é a propriedade
+      20px é o valor */ 
+   margin-left: 80px;
+}
+/* cor das letras marinho e a 
+   margem esquerda com 20 pixel */
+   </style>
+
+</head>
+<body>
+   <h1>Como adicionar CSS</h1>
+
+   <p><button onclick="document.location='/css/Css/seletor/seletor.html'">SELETOR CSS</button></p>
+
+   <p>Quando um navegador lê uma folha de estilo, ele formata o documento HTML de acordo com as informações da folha de estilo.</p>
+
+   <h2>Maneiras de inserir CSS</h2>
+
+   <p>Existem três maneiras de inserir uma folha de estilo:</p>
+
+   <ul>
+      <li>CSS externo</li>
+      <li>CSS interno</li>
+      <li>CSS embutido (<mark>não deve ser usado</mark>)</li>
+   </ul>
+
+   <h2>CSS externo</h2>
+
+   <p>Com uma folha de estilo externa, você pode alterar a aparência de um site inteiro alterando apenas um arquivo!</p>
+
+   <p>Cada página HTML deve incluir uma referência ao arquivo de folha de estilo externo dentro do elemento &lt;<b>link</b>>, dentro da seção &lt;<mark>head</mark>> &lt;<b> link </b>> &lt;<mark>/head</mark>>.</p>
+
+   <h3>Exemplo</h3>
+
+   <p>Estilos externos são definidos dentro do elemento <link>, dentro da seção <head> de uma página HTML:</p>
+
+   <pre>
+   &lt;<mark>head</mark>>
+      &lt;<mark>meta</mark> charset="UTF-8">
+      &lt;<mark>meta</mark> http-equiv="X-UA-Compatible" content="IE=edge">
+      &lt;<mark>meta</mark> name="viewport" content="width=device-width, 
+      initial-scale=1.0">
+      &lt;<mark>title</mark>>Como Adicionar CSS&lt;<mark>title</mark>>
+   
+      &lt;!-- EXEMPLO DE CSS EXTERNO --&gt;
+      &lt;!-- 
+         href => mostra o endereço do arquivo 
+                 onde se encontra a CSS
+      --&gt;
+      &lt;<mark>link</mark> rel="stylesheet" <strong>href="mystyle.css"</strong>>   
+   &lt;<mark>/head</mark>></pre>
+
+   <p>Uma folha de estilo externa pode ser escrita em qualquer editor de texto e deve ser salva com uma extensão <mark>nomeDoArquivo.css</mark>.</p>
+
+   <p>O arquivo <mark>.css</mark> externo não deve conter tags HTML.</p>
+
+   <p>Aqui está a aparência do arquivo "mystyle.css":</p>
+
+   <h3>"mystyle.css"</h3>
+
+   <pre>
+   <mark>p#externo</mark> { /* p é o seletor */
+      
+      /* cor do fundo azul claro */
+      <mark>background-color:</mark> <b>lightblue;</b>
+      
+      /* color é a propriedade
+         navy é o valor */
+      <mark>color:</mark> <b>navy;</b>
+      
+      /* margin-left é a propriedade
+         20px é o valor */ 
+      <mark>margin-left:</mark> <b>20px;</b>
+   }
+   /* cor das letras marinho e a 
+      margem esquerda com 20 pixel */
+   </pre>
+
+   <h3>Resultado do Exemplo acima</h3>
+
+   <p id="externo">Este parágrafo será estilizado pelo CSS externo.</p>
+
+   <p><mark>Nota:</mark> Não adicione um espaço entre o valor da propriedade e a unidade: <br>
+   Incorreto (com espaço): <mark>margin-left:</mark> <b>20 px</b>; <br>
+   Correto (sem expaço):  <mark>margin-left:</mark> <b>20px</b>;</p>
+   <hr>
+
+   <h2>CSS interno</h2>
+
+   <p>Uma folha de estilos interna pode ser usada se uma única página HTML tiver um estilo exclusivo.</p>
+   
+   <p>Os estilos internos são definidos dentro do elemento &lt;<mark>style</mark>>, dentro da seção &lt;<mark>head</mark>> de uma página HTML:</p>
+
+   <pre>
+   &lt;<mark>head</mark>>
+      &lt;<mark>meta</mark> charset="UTF-8">
+      &lt;<mark>meta</mark> http-equiv="X-UA-Compatible" content="IE=edge">
+      &lt;<mark>meta</mark> name="viewport" content="width=device-width, 
+      initial-scale=1.0">
+      &lt;<mark>title</mark>>Como Adicionar CSS&lt;<mark>title</mark>>
+      
+      &lt;!-- EXEMPLO DE CSS INTERNO --&gt;
+      &lt;<mark>style</mark>>
+         <mark>p#interno</mark> { /* p é o seletor */
+            
+            /* cor do fundo azul claro */
+            <mark>background-color:</mark> <b>lightblue;</b>
+            
+            /* color é a propriedade
+               navy é o valor */
+            <mark>color:</mark> <b>navy;</b>
+            
+            /* margin-left é a propriedade
+               20px é o valor */ 
+            <mark>margin-left:</mark> <b>20px;</b>
+         }
+         /* cor das letras marinho e a 
+            margem esquerda com 20 pixel */
+      &lt;<mark>/style</mark>>   
+   &lt;<mark>/head</mark>></pre>
+      
+      <h3>Resultado do Exemplo acima</h3>
+   
+      <p id="interno">Este parágrafo será estilizado pelo CSS interno.</p>
+      <hr>
+
+   <h2>CSS embutido</h2>
+
+   <p>Um estilo embutido pode ser usado para aplicar um estilo único a um único elemento.</p>
+
+   <p>Para usar estilos embutidos, adicione o atributo <mark>style</mark> ao elemento relevante. O atributo <mark>style</mark> pode conter qualquer propriedade CSS.</p>
+
+   <h3>Exemplo CSS Embutido</h3>
+
+   <p>Os estilos embutidos são definidos no atributo <mark>style</mark> do elemento relevante (CSS embutido não devem ser mais utlizados):</p>
+
+   <pre>
+   <code>NÃO SE USA MAIS CSS EMBUTIDO NAS TAGs HTML</code>
+
+   /* h2 com fundo preto, letras vermelhas, centralizado */
+   &lt;<mark>h2</mark> <strong>style="background-color: black; color: red; 
+   text-align: center;"</strong>>Este é um título&lt;<mark>/h2</mark>>
+
+   /* p com fundo verde, letras amarelas, à esquerda. */
+   &lt;<mark>p</mark> <strong>style="background-color:green; color: yellow"</strong>>Este parágrafo       
+   será estilizado pelo CSS embutido.&lt;<mark>/p</mark>></pre>
+
+   <h3>Resultado do Exemplo Acima</h3>
+
+   <p><code>NÃO SE USA MAIS CSS EMBUTIDO NAS TAGs HTML</code></p>
+
+   <h2 style="background-color:black;color:red;text-align: center;">
+      Este é um título</h2>
+
+   <p style="background-color:green; color: yellow">
+      Este parágrafo será estilizado pelo CSS embutido.</p>
+   
+   <p><mark>OBS:</mark> Estilos CSS embutidos não devem ser usados, mova estilos para um arquivo CSS externo.</p>
+   <hr>
+
+   <h2>Comentários CSS</h2>
+
+   <p>Os comentários CSS não são exibidos no navegador, mas podem ajudar a documentar seu código-fonte.</p>
+
+   <p>Os comentários são usados ​​para explicar o código e podem ajudar quando editar o código-fonte posteriormente.</p>
+
+   <p>Os comentários são ignorados pelos navegadores.</p>
+   
+   <p>Os comentários CSS começa com barra / asterisco * (<mark> / * </mark>) e termina com asterisco * barra / (<mark> * / </mark>) Tudo que estiver dentro deles é um comentário.</p>
+
+   <pre>
+   <mark>/*</mark> eu sou um comentário de uma linha <mark>*/</mark>
+
+      <mark>/*</mark> eu sou 
+         um comentário
+         de várias
+         linhas
+      <mark>*/</mark>
+
+      <mark>/*</mark> &lt;<mark>p</mark>>Este parágrafo vai virar um comentário. &lt;<mark>/p</mark>> <mark>*/</mark></pre>
+   
+      <hr>
+   
+   <p><button onclick="document.location='/css/Css/seletor/seletor.html'">SELETOR CSS</button></p>
+   
+   <hr>
+
+</body>
+</html>
