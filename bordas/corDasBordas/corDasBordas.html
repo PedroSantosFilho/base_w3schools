@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cor das Bordas CSS</title>
+   
+   <!--CONFIGURA O DOCUmENTO HTmL-->
+   <link rel="stylesheet" href="/css/Css/estilo/style.css">
+
+   <!--CONFIGURA AS BORDAS NO DOCUmENTO HTmL-->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <h1>Cor da Borda do CSS</h1>
+
+   <p>A propriedade <mark>border-color</mark> é usada para definir a cor das quatro bordas.</p>
+
+   <h3>A cor pode ser definida por:</h3>
+
+   <ul>
+      <li><mark>name</mark> - especifique um nome de cor, como "red" (vermelho)</li>
+      <li><mark>HEX</mark> - especifique um valor HEX, como "#ff0000"</li>
+      <li><mark>RGB</mark> - especifique um valor RGB, como "rgb(255,0,0)"</li>
+      <li><mark>HSL</mark> - especifique um valor HSL, como "hsl(0, 100%, 50%)"</li>
+      <li><mark>transparent</mark></li>
+   </ul>
+
+   <p><mark>Nota:</mark> Se <mark>border-color</mark>  não estiver definido, herda a cor do elemento.</p>
+
+   <pre>
+   Exemplo
+   p.one {
+      border-style: solid;
+      <mark>border-color:</mark> red; /* vermelho */
+      border-width: 10px; /* largura 10 px */
+      padding: 10px; /* espaços entre o texto e as bordas */
+    }
+    
+    p.two {
+      border-style: solid;
+      <mark>border-color:</mark> green; /* verde */
+      border-width: 10px; /* largura 10 px */
+      padding: 10px; /* espaços entre o texto e as bordas */
+    } 
+    
+    p.three {
+      border-style: dotted;
+      <mark>border-color:</mark> blue; /* azul */
+      border-width: 10px; /* largura 10 px */
+      padding: 10px; /* espaços entre o texto e as bordas */
+    } </pre>
+    
+   <h3>Resultado do Exemplo acima</h3>
+      
+   <pre>
+   <p class="one">Algum texto.</p>
+   <p class="two">Algum texto.</p>
+   <p class="three">Algum texto.</p>
+   </pre>
+   <hr>
+
+   <h2>Cores Laterais Específicas</h2>
+
+   <p>A propriedade <mark>border-color:</mark> pode ter de um a quatro valores (para a borda superior, borda direita, borda inferior e borda esquerda).</p>
+
+   <pre>
+   Exemplo
+   p.um {
+      border-style: solid; /* estilo sólido */
+      
+      border-width: 10px; /* largura 10 px */
+      
+      <mark>border-color:</mark> red green blue yellow; 
+      /* cor topo vermelho, direito verde, 
+      fundo azul e esquerdo amarelo */
+      
+      padding: 10px; /* espaços entre o texto e as bordas */
+   }
+   </pre>
+
+   <h3>Resultado do Exemplo acima</h3>
+
+   <pre>
+   <p class="um">Uma borda multicolorida  sólida</p>
+   </pre>
+
+   <hr>
+
+</body>
+</html>

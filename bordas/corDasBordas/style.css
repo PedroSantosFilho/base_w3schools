@@ -1,0 +1,28 @@
+p.one {
+   border-style: solid;
+   border-color: red; /* verelho */
+   border-width: 10px; /* largura 10 px */
+   padding: 10px; /* espaços entre o texto e as bordas */
+ }
+ 
+ p.two {
+   border-style: solid;
+   border-color: green; /* verde */
+   border-width: 10px; /* largura 10 px */
+   padding: 10px; /* espaços entre o texto e as bordas */
+ } 
+ 
+ p.three {
+   border-style: dotted;
+   border-color: blue; /* azul */
+   border-width: 10px; /* largura 10 px */
+   padding: 10px; /* espaços entre o texto e as bordas */
+ } 
+ 
+p.um {
+    padding: 10px; /* espaços */
+    border-width: 10px; /* largura 10 px */
+    border-style: solid; /* estilo sólido */
+    border-color: red green blue yellow; /* topo vermelho, direito verde, fundo azul e esquerdo amarelo */
+ }
+ 
