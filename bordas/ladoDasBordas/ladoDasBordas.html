@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lado das Bordas CSS</title>
+   
+   <!--Css CONFIGURA O DOCUmENTO HTmL-->
+   <link rel="stylesheet" href="/css/Css/estilo/style.css">
+
+   <!--CONFIGURA AS BORDAS NO DOCUmENTO HTmL-->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <h1>Borda CSS - Lados Individuais</h1>
+
+   <p>Pelos exemplos das páginas anteriores, percebe-se que é possível especificar uma borda diferente para cada lado.</p>
+
+   <p>No CSS, também existem propriedades para especificar cada uma das bordas (superior, direita, inferior e esquerda):</p>
+   
+   <pre>
+   Exemplo
+   p#opera {
+      border-top-style: dotted;
+      border-right-style: solid;
+      border-bottom-style: dotted;
+      border-left-style: solid;
+      border-width: 10px;
+      padding: 10px;
+   } </pre>
+   
+   <h3>Resultado do Exemplo Acima</h3>
+
+   <pre>
+   <p id="opera">2 diferentes estilos de bordas.</p>
+   </pre>
+
+   <p> O exemplo acima dá o mesmo resultado que este:</p>
+
+   <pre>
+   Exemplo
+   p#opera2 {
+      border-style: dotted solid;
+      border-width: 10px;
+      padding: 10px;
+   }</pre>
+   
+   <h3>Resultado do Exemplo Acima</h3>
+
+   <pre>
+   <p id="opera2">2 diferentes estilos de bordas.</p>
+   </pre>
+   <hr>   
+
+   <p>Então, aqui está como funciona:</p>
+
+   <p>Se a propriedade <mark>border-style</mark> quatro valores:</p>
+   
+   <ul>
+      <li><strong>estilo de borda: pontilhado sólido duplo tracejado;</strong></li>
+      <ul>
+      <li>borda superior é pontilhada</li>
+      <li>borda direita é sólida</li>
+      <li>borda inferior é dupla</li>
+      <li>borda esquerda é tracejada</li>
+   </ul></ul>
+
+   <p>Se a propriedade <mark>border-style</mark> tiver três valores:</p>
+   
+   <ul>
+   <li><strong>estilo de borda: duplo sólido pontilhado;</strong></li>
+      <ul>
+      <li>borda superior é pontilhada</li>
+      <li>as bordas direita e esquerda são sólidas</li>
+      <li>borda inferior é dupla</li>
+   </ul></ul>
+
+   <p>Se a propriedade <mark>border-style</mark> tiver dois valores:
+   
+   <ul>
+      <li><strong>estilo de borda: sólido pontilhado;</strong></li>
+         <ul>
+         <li>as bordas superior e inferior são pontilhadas</li>
+         <li>as bordas direita e esquerda são sólidas</li>
+   </ul></ul>
+
+   <p>Se a propriedade <mark>border-style</mark> tiver um valor:</p>
+
+   <ul>
+      <li><strong>estilo de borda: pontilhado;</strong></li>
+      <ul>
+         <li>todas as quatro bordas são pontilhadas</li>
+   </ul></ul>
+
+   <pre>
+   Exemplo
+      
+   p {
+      padding: 10px;
+   }
+   /* Four values */
+   p.four {
+      <mark>border-style:</mark> dotted solid double dashed;
+      border-width: 10px;
+   }
+   
+   /* Three values */
+   p.three {
+      <mark>border-style:</mark> dotted solid double;
+      border-width: 10px;
+   }
+   
+   /* Two values */
+   p.two {
+      <mark>border-style:</mark> dotted solid;
+      border-width: 10px;
+   }
+   
+   /* One value */
+   p.one {
+      <mark>border-style:</mark> dotted;
+      border-width: 10px;
+   }
+   </pre>
+   
+   <h3>Resultado do Exemplo Acima</h3>
+
+   <pre>
+   <p class="four">4 diferentes estilos de bordas.</p>
+   <p class="three">3 diferentes estilos de bordas.</p>
+   <p class="two">2 diferentes estilos de bordas.</p>
+   <p class="one">1 estilo de borda.</p>
+   </pre>
+
+   <p>A propriedade <mark>border-style:</mark> é usada no exemplo acima.</p>
+   
+   <p>No entanto, também funciona com <mark>border-width</mark> e <mark>border-color</mark>.</p>
+
+   <hr>
+
+</body>
+</html>

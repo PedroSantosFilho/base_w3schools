@@ -1,0 +1,40 @@
+p#opera {
+   border-top-style: dotted;
+   border-right-style: solid;
+   border-bottom-style: dotted;
+   border-left-style: solid;
+   border-width: 10px;
+   padding: 10px;
+ }
+ p#opera2 {
+   border-style: dotted solid;
+   border-width: 10px;
+   padding: 10px;
+}
+
+p {
+   padding: 10px;
+}
+/* Four values */
+p.four {
+   border-style: dotted solid double dashed;
+   border-width: 10px;
+ }
+ 
+ /* Three values */
+ p.three {
+   border-style: dotted solid double;
+   border-width: 10px;
+ }
+ 
+ /* Two values */
+ p.two {
+   border-style: dotted solid;
+   border-width: 10px;
+ }
+ 
+ /* One value */
+ p.one {
+   border-style: dotted;
+   border-width: 10px;
+ }
