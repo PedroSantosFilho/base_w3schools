@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bordas CSS</title>
+
+   <!--CONFIGURA O DOCUmENTO HTmL-->
+   <link rel="stylesheet" href="/css/Css/estilo/style.css">
+
+   <!--CONFIGURA OS EXEmPLOS HTmL-->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <h1>Bordas CSS</h1>
+
+   <p>As propriedades de borda do CSS permitem que você especifique o estilo, a largura e a cor da borda de um elemento.</p>
+
+   <h2>Estilo de Borda CSS</h2>
+
+   <p>A propriedade <strong>border-style</strong> especifica que tipo de borda exibir.</p>
+
+   <p>Os seguintes valores são permitidos:</p>
+
+   <ul>
+      <li><mark>dotted</mark> - Define uma borda pontilhada</li>
+      <li><mark>dashed</mark> - Define uma borda tracejada</li>
+      <li><mark>solid</mark> - Define uma borda sólida</li>
+      <li><mark>double</mark> - Define uma borda dupla</li>
+      <li><mark>groove</mark> - Define uma borda ranhurada 3D. O efeito depende do valor da cor da borda</li>
+      <li><mark>ridge</mark> - Define uma borda ondulada 3D. O efeito depende do valor da cor da borda</li>
+      <li><mark>inset</mark> - Define uma borda de inserção 3D. O efeito depende do valor da cor da borda</li>
+      <li><mark>outset</mark> - Define uma borda inicial 3D. O efeito depende do valor da cor da borda</li>
+      <li><mark>none</mark> - Não define borda</li>
+      <li><mark>hidden</mark> - Define uma borda oculta</li>
+   </ul>
+
+   <p>A propriedade <strong>border-style</strong> pode ter de um a quatro valores (para a borda superior, borda direita, borda inferior e borda esquerda).</p>
+
+   <h3>Exemplo</h3>
+
+   <p>Demonstração dos diferentes estilos de borda:</p>
+
+   <pre>
+      Exemplo Css
+      p.dotted {<strong>border-style:</strong> <mark>dotted</mark>;}
+      p.dashed {<strong>border-style:</strong> <mark>dashed</mark>;}
+      p.solid {border-style: <mark>solid</mark>;}
+      p.double {border-style: <mark>double</mark>;}
+      p.groove {border-style: <mark>groove</mark>;}
+      p.ridge {border-style: <mark>ridge</mark>;}
+      p.inset {border-style: <mark>inset</mark>;}
+      p.outset {border-style: <mark>outset</mark>;}
+      p.none {border-style: <mark>none</mark>;}
+      p.hidden {border-style: <mark>hidden</mark>;}
+      p.mix {border-style: <mark>dotted dashed solid double</mark>;}
+   </pre>
+   <hr>
+
+   <h3>Resultado do Exemplo Acima</h3>
+
+   <p class="dotted">Uma borda pontilhada.</p>
+   <p class="dashed">Uma borda tracejada.</p>
+   <p class="solid">Uma borda sólida.</p>
+   <p class="double">Uma borda dupla.</p>
+   <p class="groove">Uma borda ranhurada.</p>
+   <p class="ridge">Uma borda ondulada.</p>
+   <p class="inset">Uma borda de inserção.</p>
+   <p class="outset">Uma borda inicial.</p>
+   <p class="none">borda sem definição.</p>
+   <p class="hidden">Uma borda oculta.</p>
+   <p class="mix">Uma borda mista.</p>
+
+   <p id="obs"><mark>Nota:</mark> Nenhuma das <mark>OUTRAS</mark> propriedades de borda CSS terá <mark>QUALQUER</mark> efeito, a menos que a propriedade <mark>border-style</mark> seja definida!</p>
+   <hr>
+
+</body>
+</html>

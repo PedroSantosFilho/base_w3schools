@@ -1,0 +1,17 @@
+   p {
+      padding: 8px;
+      border: 10px;
+   }
+
+   p.dotted {border-style: dotted;} /* borda pontilhada*/
+   p.dashed {border-style: dashed;} /* borda tracejada */
+   p.solid {border-style: solid;}   /* borda sólida */
+   p.double {border-style: double;} /* borda dupla */
+   p.groove {border-style: groove;} /* borda ranhurada */
+   p.ridge {border-style: ridge;}   /* borda ondulada */
+   p.inset {border-style: inset;}   /* borda de inserção */
+   p.outset {border-style: outset;} /* borda inicial */
+   p.none {border-style: none;}     /* borda sem definição */
+   p.hidden {border-style: hidden;} /* borda oculta */
+   p.mix {border-style: dotted dashed solid double;} /* borda mista */
+   
