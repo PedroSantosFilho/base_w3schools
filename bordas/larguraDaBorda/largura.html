@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Largura da Borda CSS</title>
+
+   <!--CONFIGURA O DOCUmENTO HTmL-->
+   <link rel="stylesheet" href="/css/Css/estilo/style.css">
+
+   <!--CONFIGURA AS BORDAS-->
+   <link rel="stylesheet" href="style.css">
+      
+</head>
+<body>
+   <h1>Largura da Borda do CSS</h1>
+
+   <p>A propriedade <mark>border-width</mark> especifica a largura (width) das quatro bordas.</p>
+
+   <p>A largura (width) pode ser definida como um tamanho específico <mark>(em px, pt, cm, em, etc)</mark> ou usando um dos três valores pre-definidos: <mark>fino, médio ou grosso:</mark></p>
+
+   <pre>
+   Exemplo CSS
+   Demonstração das diferentes larguras de borda: 
+   p.one {
+      border-style: solid;
+      <mark>border-width</mark> 5px;
+   }
+   p.two {
+      border-style: solid;
+      <mark>border-width</mark> medium;
+   }
+   p.three {
+      border-style: dotted;
+      <mark>border-width</mark> 2px;
+   }
+   p.four {
+      border-style: dotted;
+      <mark>border-width</mark> thick;
+   } 
+   p.five {
+      border-style: double;
+      <mark>border-width</mark> 15px;
+   }
+   p.six {
+      border-style: double;
+      <mark>border-width</mark> thick;
+   } </pre>
+
+   <h3>Resultado do Exemplo acima</h3>
+      
+   <p class="one">Algum texto.</p>
+   <p class="two">Algum texto.</p>
+   <p class="three">Algum texto.</p>
+   <p class="four">Algum texto.</p>
+   <p class="five">Algum texto.</p>
+   <p class="six">Algum texto.</p>
+   
+   <p><b>Nota:</b> A propriedade <mark>border-width</mark> não funciona se for usada sozinha.
+   <strong>Sempre</strong> especifique a propriedade <strong>"border-style"</strong>para definir as bordas primeiro.</p>
+   <hr>
+
+   <h2>Larguras Laterais Específicas</h2>
+
+   <p>A propriedade <mark>border-width</mark> pode ter de um a quatro valores (para a borda superior, borda direita, borda inferior e borda esquerda):</p>
+
+   <pre>
+   Exemplo
+   p.um {
+      border-style: solid;
+      <mark>border-width</mark> 5px 20px; /* 5px top and bottom, 
+      20px on the sides */
+   }
+   p.dois {
+      border-style: solid;
+      <mark>border-width</mark> 20px 5px; /* 20px top and bottom,
+      5px on the sides */
+   }
+   p.tres {
+      border-style: dotted;
+      <mark>border-width</mark> 25px 10px 4px 35px; /* 25px top, 10px right, 
+      4px bottom and 35px left */
+   } </pre>
+
+   <h3>Resultado do Exemplo acima</h3>
+      
+   <p class="um">Algum texto.</p>
+   <p class="dois">Algum texto.</p>
+   <p class="tres">Algum texto.</p>
+   <hr>
+
+</body>
+</html>
