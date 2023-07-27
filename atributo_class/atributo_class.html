@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>O Atributo class Html</title>
+
+   <!--CONFIGURA O BADY-->
+   <link rel="stylesheet" href="/w3schools/base_w3schools/estilo/style.css">
+
+   <style>
+      .city {
+         background-color: tomato;
+         color: white;
+         border: 2px solid white;
+         margin-left: 100px;
+         margin-right: 100px;
+         padding: 20px;
+      }
+      
+      div, h2, p.dive {
+         text-align: left;
+         margin: 20px;
+      }
+      
+      .observacao {
+         background-color: #ffffcc;
+         color: black;
+         margin-left: 100px;
+         margin-right: 100px;
+      }
+
+      p:hover, h3:hover  {
+         color: red;
+      }
+
+   </style>
+
+</head>
+<body>
+
+   <header>
+      <h1>O Atributo class do Html</h1>
+   </header>
+   <hr>
+   
+   <main>
+      <section>
+         <p>O atributo HTML <b>class</b> é usado para especificar uma classe para um elemento HTML.</p>
+
+         <p>Vários elementos HTML podem compartilhar a mesma <b>class</b>.</p>
+
+         <h3>Usando o atributo de classe</h3>
+
+         <p>O atributo <b>class</b> geralmente é usado para apontar para um nome de classe em uma folha de estilo. Também pode ser usado por um JavaScript para acessar e manipular elementos com o nome <b>class</b> específico.</p>
+
+         <div class="observacao">
+            <p><b>Dica:</b> O atributo class pode ser usado em qualquer elemento HTML.</p>
+
+            <p><b>Observação:</b> o nome da class diferencia maiúsculas de minúsculas!</p>
+         </div>
+
+         <h3>A sintaxe da classe</h3>
+         
+         <p>Para criar uma classe; escreva um caractere de ponto (.), seguido de um nome de classe. Em seguida, defina as propriedades CSS entre chaves {}.</p>
+
+         <p>Diferentes elementos HTML podem apontar para o mesmo nome de classe.</p>
+
+         <p>No exemplo a seguir temos três elementos &lt;<b>div</b>> com um atributo class com o valor <b>"cidade"</b>. Todos os três elementos &lt;<b>p</b>> serão estilizados igualmente de acordo com a definição <b>.city</b> de estilo na seção head:</p>
+
+         <h3>Exemplo</h3>
+
+         <pre>
+         &lt;<b>head</b>>
+         &lt;<b>style</b>>
+            .city {
+               background-color: tomato;
+               color: white;
+               border: 2px solid white;
+               margin-left: 100px;
+               margin-right: 100px;
+               padding: 20px;
+            }
+            div, h2, p.dive {
+               text-align: left;
+               margin: 20px;
+            }
+         &lt;<b>/style</b>>
+         &lt;<b>/head</b>></pre>
+      
+         <h3>Resultado do exemplo Acima</h3>
+
+         <div class="city">
+            <h2 class="dive">London</h2>
+            <p class="dive">London is the capital of England.</p>
+         </div>
+
+         <div class="city">
+            <h2 class="dive">Paris</h2>
+            <p class="dive">Paris is the capital of France.</p>
+         </div>
+
+         <div class="city">
+            <h2 class="dive">Tokyo</h2>
+            <p class="dive">Tokyo is the capital of Japan.</p>
+         </div>
+      </section>
+      <hr>
+
+      <section id="resumo">
+      <h2>Resumo</h2>
+
+      <ul>
+         <li>O atributo HTML <b>class</b> especifica um ou mais nomes de classe para um elemento</li>
+         <li>Classes são usadas por CSS e JavaScript para selecionar e acessar elementos específicos</li>
+         <li>O atributo <b>class</b> pode ser usado em qualquer elemento HTML</li>
+         <li>O nome da classe diferencia maiúsculas de minúsculas</li>
+         <li>Diferentes elementos HTML podem apontar para o mesmo nome de classe</li>
+         <li>JavaScript pode acessar elementos com um nome de classe específico com o método <b>getElementsByClassName("nome da classe")</b></li>
+      </ul>
+
+      </section>
+   </main>
+   <hr>
+
+   <footer>
+      &copy; w3schools class
+   </footer>
+   <hr>
+
+</body>
+</html>
