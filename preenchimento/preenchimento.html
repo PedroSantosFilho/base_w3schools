@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Preenchimento CSS</title>
+
+   <link rel="stylesheet" href="../estilo/style.css">
+   
+   <style>
+      div.ex1 {
+        width: 300px;
+        padding: 10px;
+        background-color: yellow;
+        color: black;
+        text-align: center;
+        margin: auto;
+      }
+      
+      div.ex2 {
+         width: 300px;
+        padding: 25px;
+        background-color: lightblue;
+        color: black;
+        margin: auto;
+      }
+      </style>
+</head>
+<body>
+   <header>
+      <h1>Preenchimento CSS</h1>
+
+      <p>O preenchimento é usado para criar espaço ao redor do conteúdo de um elemento, dentro de qualquer borda definida.</p>
+
+      <p>Com CSS, você tem controle total sobre o preenchimento. Existem propriedades para definir o preenchimento de cada lado de um elemento (superior, direito, inferior e esquerdo).</p>
+
+   </header>
+
+   <section>
+      <h2>Preenchimento - Lados Individuais</h2>
+
+      <p>CSS tem propriedades para especificar o preenchimento de cada lado de um elemento:</p>
+
+      <ul>
+         <li><mark>padding</mark> - propriedade abreviada define todas as propriedades</li>
+         <li><mark>padding-top</mark> - preenchimento superior</li>
+         <li><mark>padding-right</mark> - preenchimento direita</li>
+         <li><mark>padding-bottom</mark> - preenchimento inferior</li>
+         <li><mark>padding-left</mark> - preenchimento esquerda</li>
+      </ul>
+
+      <p>Todas as propriedades de preenchimento podem ter os seguintes valores:</p>
+
+      <ul>
+         <li>length - especifica um preenchimento em px, pt, cm, etc.</li>
+         <li>% - especifica um preenchimento em % da largura do elemento que o contém</li>
+         <li>inherit - especifica que o preenchimento deve ser herdado do elemento pai</li>
+      </ul> 
+
+      <p class="obs">Dica: Valores negativos são permitidos.</p>
+
+      <h3>Exemplo</h3>
+
+      <p>Define um preenchimento diferentes para todos os quatro lados de um elemento &lt;<mark>div</mark>>:</p>
+
+      <pre>
+      div {
+         <mark>background-color</mark>: lightblue;
+         <mark>border</mark>: 1px solid black;
+         <mark>padding-top: 100px;</mark> /* preenchimento superior 100px */
+         <mark>padding-bottom:</mark> 100px;/* preenchimento inferior 100px */
+         <mark>padding-right:</mark> 150px; /* preenchimento direita com 150px */
+         <mark>padding-left:</mark> 80px; /* preenchimento esquerda com 80px */
+      }</pre>
+
+      <hr>
+
+      <h2>Proriedade abreviada <mark>padding</mark></h2>
+      
+      <p>Para encurtar o código, é possível especificar todas as propriedades padding em uma propriedade abreviada <mark>padding</mark>.</p>
+      
+      <p>A propriedade <mark>padding</mark> é uma propriedade abreviada para as seguintes propriedades de preenchimento individuais:</p>
+      
+      <pre>
+      Exemplo de preenchimento individual.
+      <mark>padding-top</mark>     // preenchimento superior
+      <mark>padding-right</mark>   // preenchimento direita
+      <mark>padding-bottom</mark>  // preenchimento inferior
+      <mark>padding-left</mark>    // preenchimento esquerda
+      </pre>
+
+      <p>Se a propriedade <mark>padding</mark> tiver quatro valores:</p>
+      
+      <ul>
+      <li><strong>preenchimento: 25px 50px 75px 100px;</strong></li>
+         <ul>   
+            <li>preenchimento superior é 25px</li>
+            <li>preenchimento direita é 50px</li>
+            <li>preenchimento inferior é 75px</li>
+            <li>preenchimento esquerda é 100px</li>
+         </ul>
+      </ul>
+
+      <p>Use a propriedade abreviada <mark>padding</mark> com quatro valores:</p>
+      
+      <pre>
+      Exemplo
+      p {
+        /* propriedade abreviada */ 
+        <strong>padding:</strong> 25px 50px 75px 100px;
+      } </pre>
+
+      <p>Se a propriedade <mark>padding</mark> tiver três valores:</p>
+      
+      <ul>
+         <li><strong>padding:</strong> 25px 50px 75px;</li>
+         <ul>
+            <li>preenchimento superior é 25px</li>
+            <li>os preenchimento direita e esquerda são 50px</li>
+            <li>e o preenchimento inferior é 75px</li>
+         </ul>
+      </ul>
+
+      <p>Use a propriedade abreviada preenchimento com três valores: </p>
+      
+      <pre>
+      p {
+        // propriedade abreviada com três valores
+        <strong>padding:</strong> 25px 50px 75px;
+      }</pre>
+
+      <p>Se a propriedade <mark>padding</mark> tiver dois valores:</p>
+      
+      <ul>
+         <li><strong>padding: 25px 50px;</strong></li>
+         <ul>
+            <li>os preenchimento superior e inferior são 25px</li>
+            <li>os preenchimento direita e esquerdo são 50px</li>
+         </ul>
+      </ul>
+      
+      <p>Use a propriedade abreviada de preenchimento com dois valores:</p>
+      
+      <pre>
+      propriedade abreviada com dois valores
+      p {
+        <strong>padding: 25px 50px;</strong>
+      }</pre>
+
+      <p>Se a propriedade <mark>padding</mark> tiver um valor:</p>
+      
+      <ul>
+         <li><strong>padding: 25px;</strong></li>
+         <ul>
+            <li>todas os quatro preenchimentos são 25px</li>
+         </ul>
+      </ul>
+
+      <p>Use a propriedade abreviada preenchimento com um valor:</p>
+      
+      <pre>
+      Propriedade abreviada com um valor.
+      p {
+        <strong>padding: 25px;</strong>
+      }</pre>
+      
+      <hr>
+
+      <h2>Preenchimento e largura do elemento</h2>
+
+      <p>A propriedade CSS <mark>width</mark> especifica a largura da área de conteúdo do elemento. A área de conteúdo é a parte dentro do preenchimento, borda e margem de um elemento ( o modelo de caixa ).</p>
+      
+      <p>Portanto, se um elemento tiver uma largura especificada, o preenchimento adicionado a esse elemento será adicionado à largura total do elemento. Isso geralmente é um resultado indesejável.</p>
+      
+      <h3>Exemplo</h3>
+
+      <p>Aqui, o elemento &lt;<mark>div</mark>> recebe uma largura de 300px. No entanto, a largura real do elemento &lt;<mark>div</mark>> será 350px (300px + 25px de preenchimento esquerdo + 25px de preenchimento direito):</p>         
+
+      <hr>
+
+      <h2>Padding e o elemento width</h2>
+
+      <pre>   
+      &lt;<mark>style</mark>>
+      div.ex1 {
+        width: 300px;
+        padding: 10px;
+        background-color: yellow;
+        color: black;
+        text-align: center;
+        margin: auto;
+      }
+      
+      div.ex2 {
+        width: 300px;
+        padding: 25px;
+        background-color: lightblue;
+        color: black;
+        margin: auto;
+      }
+      &lt;<mark>/style</mark>> </pre>
+
+      <div class="ex1">Este div tem 300px de largura.</div>
+      <br>
+
+      <div class="ex2">A largura deste div é de 350px, embora seja definido como 300px no CSS.</div>
+
+      <hr>
+
+   </section>
+
+</body>
+</html>
