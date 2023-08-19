@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cor do Contorno CSS</title>
+   <link rel="stylesheet" href="/w3schools/Css/estilo/style.css">
+
+   <style>
+      p.ex1 {
+         border: 2px solid white;
+         outline-width: 5px;
+         outline-style: solid;
+         outline-color: red;
+      }
+         p.ex2 {
+         border: 2px solid white;
+         outline-width: 5px;
+         outline-style: dotted;
+         outline-color: blue;
+      }
+         p.ex3 {
+         border: 2px solid white;
+         outline-width: 5px;
+         outline-style: outset;
+         outline-color: grey;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>Cor do Contorno CSS</h1>
+   </header>
+   <hr>
+
+   <main>
+      <p>A propriedade <b>outline-color</b> é usada para definir a cor do contorno.</p>
+      
+      <p>A cor pode ser definida por:</p>
+      
+      <ul>
+         <li><b>nome</b> - especifique um nome de cor, como "vermelho"</li>
+         <li><b>HEX</b> - especifique um valor hexadecimal, como "#ff0000"</li>
+         <li><b>RGB</b> - especifique um valor RGB, como "rgb(255,0,0)"</li>
+         <li><b>HSL</b> - especifique um valor HSL, como "hsl(0, 100%, 50%)"</li>
+         <li><b>inverter</b> - realiza uma inversão de cores (garante que o contorno fique visível, independentemente da cor do fundo)</li>
+      </ul>
+
+      <p>O exemplo a seguir mostra alguns contornos diferentes com cores diferentes. Observe também que esses elementos também possuem uma borda branca fina dentro do contorno:</p>
+      
+      <pre>
+      &lt;<mark>style</mark>>
+         <b>p.ex1</b> {
+            <b>border:</b> 5px solid white;
+            <b>outline-width:</b> 5px;
+            <b>outline-style:</b> solid;
+            <b>outline-color:</b> red;
+         }
+
+         <b>p.ex2</b> {
+            <b>border:</b> 5px solid white;
+            <b>outline-width:</b> 5px;
+            <b>outline-style:</b> dotted;
+            <b>outline-color:</b> blue;
+         }
+
+         <b>p.ex3</b> {
+            <b>border:</b> 5px solid white;
+            <b>outline-width:</b> 5px;
+            <b>outline-style:</b> outset;
+            <b>outline-color:</b> grey;
+         }
+      &lt;<mark>/style</mark>></pre>
+
+      <h3>Resultado do exemplo Acima</h3>
+
+   
+      <p class="ex1">Um contorno vermelho sólido.</p>
+      
+      <p class="ex2">Um contorno azul pontilhado.</p>
+      
+      <p class="ex3">Um contorno cinza inicial.</p>
+
+   </main>
+   <hr>
+
+   <footer> 
+      &copy; w3schools CSS
+   </footer>
+   <hr>
+
+
+</body>
+</html>
