@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Deslocamento do Contorno CSS</title>
+   <link rel="stylesheet" href="/w3schools/Css/estilo/style.css">
+   
+   <style>
+      p.espaco { /* outline-offset == deslocamento do contorno */
+         text-align: center;
+         margin: 10px 150px 10px 100px; /* => margem*/
+         padding: 10px; /* enchimento */
+         border: 5px solid white; /* borda */ 
+         outline: 5px solid red; /* contorno */
+         outline-offset: 15px; /* espaçamento entre a borda branca e o contorno vermelho. */
+      }
+   </style>
+
+</head>
+<body>
+   <header>
+      <h1>Espaço Entre Borda e Contorno CSS</h1>
+   </header>
+   <hr>
+
+   <main>
+      <h2>Deslocamento do Contorno do CSS</h2>
+
+      <p>A propriedade <b>outline-offset</b> (deslocamento do contorno) adiciona espaço entre um contorno e a borda de um elemento. O espaço de 15px entre a borda e seu contorno é transparente.</p>
+      
+      <p>O exemplo a seguir especifica um espaço entre a borda e o contorno de 15px:</p>
+
+      <pre>
+      &lt;<mark>style</mark>>
+         p.espaco { => <b>outline-offset ==</b> deslocamento do contorno.
+            <b>text-aling:</b> center;
+            <b>margin:</b> 10px 150px 10px 100px; => margem
+            <b>padding:</b> 10px; => enchimento
+            <b>border:</b> 5px solid white; => borda 5 pixel 
+            <b>outline:</b> 5px solid red; => contorno 5 pixel
+            <b>outline-offset:</b> 15px; => espaçamento de 15 pixel
+                                    entre a borda branca 
+                                    e o contorno vermelho.
+         }
+      &lt;<mark>/style</mark>></pre>
+
+      <h3>Resultado do Exemplo Acima</h3>
+
+      <p class="espaco">Este parágrafo tem um espaço de 15px entre a borda e o contorno.</p><br>
+      <hr>
+
+      <h3>Tabela das Propriedades do Contorno</h3>
+      
+      <table>
+         <caption>Todas as Propriedades do Contorno CSS</caption>
+
+         <th>Property</th>
+         <th>Description</th>
+         <tr>
+            <td>outline</td>	
+            <td>A shorthand property for setting outline-width, outline-style, and outline-color in one declaration</td>
+         </tr>
+         <tr>
+            <td>outline-color</td>
+            <td>Sets the color of an outline</td>
+         </tr>
+         <tr>
+            <td>outline-offset</td>
+            <td>Specifies the space between an outline and the edge or border of an element</td>
+         </tr>
+         <tr>
+            <td>outline-style</td>
+            <td>Sets the style of an outline</td>
+         </tr>
+         <tr>
+            <td>outline-width</td>
+            <td>Sets the width of an outline</td>
+         </tr>
+      </table>
+      
+   </main>
+   <hr>
+
+   <footer>
+      &copy; W3school
+   </footer>
+   <hr>
+   
+</body>
+</html>
