@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Largura do Contorno</title>
+   <link rel="stylesheet" href="/w3schools/Css/estilo/style.css">
+
+   <style>
+      p#exp1 {
+         border: 1px solid white;
+         outline-style: solid;
+         outline-color: red;
+         outline-width: thin;
+         margin: 20px 200px 5px 100px;
+         padding: 5px;
+      }
+
+      p#exp2 {
+         border: 1px solid white;
+         outline-style: solid;
+         outline-color: red;
+         outline-width: medium;
+         margin: 20px 200px 2px 100px;
+         padding: 5px;
+      }
+
+      p#exp3 {
+         border: 1px solid white;
+         outline-style: solid;
+         outline-color: red;
+         outline-width: thick;
+         margin: 20px 200px 2px 100px;
+         padding: 5px;
+      }
+
+      p#exp4 {
+         border: 1px solid white;
+         outline-style: solid;
+         outline-color: red;
+         outline-width: 4px;
+         margin: 20px 200px 2px 100px;
+         padding: 5px;
+      }
+   </style>
+   
+</head>
+<body>
+   
+<header>
+   <h1>Largura do Contorno CSS</h1>
+</header>
+<hr>
+
+<main>
+   
+   <p>A propriedade <b>outline-width</b> especifica a largura do contorno e pode ter um dos seguintes valores:</p>
+   
+   <ul>
+      <li><b>thin</b> ( fino - normalmente 1px)</li>
+      <li><b>medium</b> ( médio - normalmente 3px)</li>
+      <li><b>thick</b> ( grosso - normalmente 5px)</li>
+      <li>Um tamanho específico (em px, pt, cm, em, etc)</li>
+   </ul>
+   <hr>
+
+   <h2>A propriedade outline</h2>
+
+   <p>O exemplo a seguir mostra alguns contornos com diferentes larguras:</p>
+
+   <pre>
+   &lt;<mark>style</mark>
+      <b>p#exp1</b> {
+         <b>border:</b> 1px solid white; => borda: largura 1px, 
+                                             tipo sólido 
+                                             cor branca
+         <b>outline-style:</b> solid; => estilo do contorno: sólido
+         <b>outline-color:</b> red; => cor do contorno: vermelho
+         <b>outline-width:</b> thin; => largura do contorno: fino
+         <b>padding:</b> 5px; => enchimento: 5px
+         <b>margin:</b> 20px 200px 5px 100px; => margem: topo 20px,
+                                             lado direito 200px,
+                                             inferior 5px,
+                                             lado esquerdo 100px
+      }
+
+      <b>p#exp2</b> {
+         <b>border:</b> 1px solid white;
+         <b>outline-style:</b> solid;
+         <b>outline-color:</b> red;
+         <b>outline-width:</b> medium; => largura do contorno: médio
+         <b>margin:</b> 20px 200px 2px 100px;
+         <b>padding:</b> 5px;
+      }
+
+      <b>p#exp3</b> {
+         <b>border:</b> 1px solid white;
+         <b>outline-style:</b> solid;
+         <b>outline-color:</b> red;
+         <b>outline-width:</b> thick; => largura do contorno: grosso
+         <b>margin:</b> 20px 200px 2px 100px;
+         <b>padding:</b> 5px;
+      }
+
+      <b>p#exp4</b> {
+         <b>border:</b> 1px solid white;
+         <b>outline-style:</b> solid;
+         <b>outline-color:</b> red;
+         <b>outline-width:</b> 4px; => largura do contorno: 4 pixel
+         <b>margin:</b> 20px 200px 2px 100px;
+         <b>padding:</b> 5px;
+      }
+   &lt;<mark>/style</mark>></pre>
+
+   <h3>Resultado do Exemplo Acima</h3>
+
+   <p id="exp1">Um contorno fino.</p>
+
+   <p id="exp2">Um contorno médio.</p>
+
+   <p id="exp3">Um contorno grosso.</p>
+
+   <p id="exp4">Um contorno com 4px de espessura.</p>
+</main>
+<hr>
+
+<footer>
+   &copy; W3school CSS
+</footer>
+<hr>
+
+</body>
+</html>
