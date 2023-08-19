@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Display CSS</title>
+
+   <link rel="stylesheet" href="/w3schools/base_w3schools/estilo/style.css">
+
+   <style>
+      li.lista {
+         display: inline;
+      }
+      li.bloco {
+         display: block;
+      }
+      h3.hidden {
+         display: none;
+      }
+      h3.hidden2 {
+         visibility: hidden;
+      }
+   </style>
+
+</head>
+<body>
+   <header>
+      <h1>Layout CSS - A propriedade <b>display</b></h1>
+
+      <p>A propriedade <b>display</b> é a propriedade CSS mais importante para controlar o layout.</p>
+   </header>
+   <hr>
+
+   <main>
+      <h2>A propriedade de display</h2>
+
+      <p>A propriedade <b>display</b> especifica se/como um elemento é exibido.</p>
+      
+      <p>Cada elemento HTML tem um valor de exibição padrão, dependendo do tipo de elemento. O valor de exibição padrão para a maioria dos elementos é <b>block</b> ou <b>inline</b>.</p>
+      <hr>
+
+      <h2>Elementos de nível de bloco</h2>
+
+      <p>Um elemento de nível de bloco sempre começa em uma nova linha e ocupa toda a largura disponível (estende-se para a esquerda e para a direita o máximo possível).</p>
+
+      <p>O elemento &lt;<b>div</b>> é um elemento de nível de bloco.</p>
+
+      <p>Exemplos de elementos de nível de bloco:</p>
+
+      <ul>
+         <li>&lt;<b>div></b>></li>
+         <li>&lt;<b>h1</b>> - &lt;<b>h6</b>></li>
+         <li>&lt;<b>p</b>></li>
+         <li>&lt;<b>form</b>></li>
+         <li>&lt;<b>header</b>></li>
+         <li>&lt;<b>footer</b>></li>
+         <li>&lt;<b>section</b>></li>
+      </ul>
+      <hr>
+
+      <h2>Elementos embutidos</h2>
+
+      <p>Um elemento inline não começa em uma nova linha e ocupa apenas a largura necessária.</p>
+
+      <p>Este é um elemento &lt;<b>span</b>> embutido dentro de um parágrafo.</p>
+
+      <p>Exemplos de elementos embutidos:</p>
+
+      <ul>
+         <li>&lt;<b>span></b>></li>
+         <li>&lt;<b>ul</b>></li>
+         <li>&lt;<b>img</b>></li>
+      </ul>
+      <hr>
+
+      <h2>Display none</h2>
+
+      <p><b>display: none;</b> é comumente usado com JavaScript para ocultar e mostrar elementos sem excluí-los e recriá-los.</p>
+
+      <p>O elemento &lt;<b>script</b>> usa <b>display: none</b>; como padrão.</p> 
+      <hr>
+
+      <h3>Exemplo</h3>
+
+      <pre>
+   &lt;<b>head</b>>
+   &lt;<b>style</b>>
+   <b>li.lista</b> {
+      display: inline;
+   }
+   &lt;<b>/style</b>>
+   &lt;<b>/head</b>>
+
+   &lt;<b>body</b>>
+   &lt;<b>p</b>>Display a list of links as a horizontal menu:&lt;<b>/p</b>>
+   
+   &lt;<b>ul</b>>
+      &lt;<b>li class="lista"></b>&lt;<b>a</b> href="//www.w3schools.com/html/default.asp" 
+         target="_blank">HTML&lt;<b>/a</b>>&lt;<b>/li</b>>
+      &lt;<b>li class="lista"></b>&lt;<b>a</b> href="//www.w3schools.com/css/default.asp" 
+         target="_blank">CSS&lt;<b>/a</b>>&lt;<b>/li</b>>
+      &lt;<b>li class="lista"></b>&lt;<b>a</b> href="//www.w3schools.com/js/default.asp" 
+         target="_blank">JavaScript&lt;<b>/a</b>>&lt;<b>/li</b>>
+   &lt;<b>/ul</b>>
+   &lt;<b>/body</b>></pre>
+
+      <h3>Resultado do Exemplo Acima</h3>
+      
+      <p>Display a list of links as a horizontal menu:</p>
+      
+      <ul>
+         <li class="lista"><a href="//www.w3schools.com/html/default.asp"  target="_blank">HTML</a></li>
+         <li class="lista"><a href="//www.w3schools.com/css/default.asp"  target="_blank">CSS</a></li>
+         <li class="lista"><a href="//www.w3schools.com/js/default.asp"  target="_blank">JavaScript</a>></li>
+      </ul>
+
+      <div class="observacao">
+         <p><strong>Observação:</strong> Definir a propriedade de exibição de um elemento altera apenas <strong>como o elemento é exibido</strong>, NÃO o tipo de elemento. Portanto, um elemento inline com <b>display: block</b>;não pode ter outros elementos de bloco dentro dele.</p>
+      </div>
+      <hr>
+
+      <h2>Substituir o valor de exibição padrão</h2>
+
+      <p>Conforme mencionado, cada elemento tem um valor de exibição padrão. No entanto, você pode substituir isso.</p>
+
+      <p>Alterar um elemento <b>inline</b> para um elemento <b>block</b>, ou vice-versa, pode ser útil para fazer a página parecer de uma maneira específica e ainda seguir os padrões da web.</p>
+
+      <p>Um exemplo comum é criar elementos &lt;<b>li</b>>  embutidos para menus verticais:</p>
+      
+      <p>O exemplo a seguir exibe elementos &lt;<b>a</b>> como elementos de bloco:</a>
+
+      <pre>
+         &lt;<b>head</b>>
+         &lt;<b>style</b>>
+         <b>li.bloco</b> {
+            display: block;
+         }
+         &lt;<b>/style</b>>
+         &lt;<b>/head</b>>
+      
+         &lt;<b>body</b>>
+         &lt;<b>p</b>>Display a list of links as a verticol menu:&lt;<b>/p</b>>
+         
+         &lt;<b>ul</b>>
+            &lt;<b>li class="bloco"></b>&lt;<b>a</b> href="//www.w3schools.com/html/default.asp" 
+               target="_blank">HTML&lt;<b>/a</b>>&lt;<b>/li</b>>
+            &lt;<b>li class="bloco"></b>&lt;<b>a</b> href="//www.w3schools.com/css/default.asp" 
+               target="_blank">CSS&lt;<b>/a</b>>&lt;<b>/li</b>>
+            &lt;<b>li class="bloco"></b>&lt;<b>a</b> href="//www.w3schools.com/js/default.asp" 
+               target="_blank">JavaScript&lt;<b>/a</b>>&lt;<b>/li</b>>
+         &lt;<b>/ul</b>>
+         &lt;<b>/body</b>></pre>
+
+         <h3>Resultado do Exemplo Acima</h3>
+
+         <p>Display a list of links as a verticol menu:</p>
+         
+         <ul>
+            <li class="bloco"><a href="//www.w3schools.com/html/default.asp" 
+               target="_blank">HTML</a></li>
+            <li class="bloco"><a href="//www.w3schools.com/css/default.asp" 
+               target="_blank">CSS</a></li>
+            <li class="bloco"><a href="//www.w3schools.com/js/default.asp" 
+               target="_blank">JavaScript</a></li>
+         </ul>
+         <hr>
+      
+         <h2>Ocultar um elemento - exibição: nenhum ou visibilidade: oculto?</h2>
+
+         <p>Ocultar um elemento pode ser feito definindo a propriedade <b>display</b> como <b>none</b>. O elemento ficará oculto e a página será exibida como se o elemento não estivesse lá:</p>
+         
+      <pre>
+      &lt;<b>head</b>>
+      &lt;<b>style</b>>
+         <strong>h3.hidden</strong> {
+            display: none;
+         }
+      &lt;<b>/style</b>>
+      &lt;<b>/head</b>>
+
+      &lt;<b>body</b>>
+         &lt;<b>h2</b>>Este é um título visível&lt;<b>/h2</b>>
+         &lt;<b>h3</b> <strong>class="hidden"</strong>>Este é um título oculto&lt;<b>/h3</b>>
+         &lt;<b>p</b>>Observe que o elemento &lt;<b>h3</b>> com <b>display: none</b>; não ocupa espaço.&lt;<b>/p</b>>
+      &lt;<b>/body</b>></pre>
+
+      <h3>Resultado do Exemplo Acima</h3>
+
+      <h2>Este é um título visível</h2>
+
+      <h3 class="hidden">Este é um título oculto</h3>
+      
+      <p>Observe que o elemento <b>h3</b> com <b>display: none</b>; não ocupa espaço.</p>
+      <hr>
+
+      <p><b>visibility:hidden</b>;também esconde um elemento.</p>
+
+      <p>No entanto, o elemento ainda ocupará o mesmo espaço de antes. O elemento ficará oculto, mas ainda afetará o layout:</p>
+
+      <pre>
+      &lt;<b>head</b>>
+      &lt;<b>style</b>>
+         <strong>h3.hidden2</strong> {
+            visibility: hidden;
+         }
+      &lt;<b>/style</b>>
+      &lt;<b>/head</b>>
+
+      &lt;<b>body</b>>
+         &lt;<b>h2</b>>Este é um título visível&lt;<b>/h2</b>>
+         &lt;<b>h3</b> <strong>class="hidden2"</strong>>Este é um título oculto&lt;<b>/h3</b>>
+         &lt;<b>p</b>>Observe que o elemento &lt;<b>h3</b>> com <b>visibility: hidden</b>; ocupa o mesmo espaço.&lt;<b>/p</b>>
+      &lt;<b>/body</b>></pre>
+
+      <h3>Resultado do Exemplo Acima</h3>
+
+      <h2>Este é um título visível</h2>
+
+      <h3 class="hidden2">Este é um título oculto</h3>
+      
+      <p>Observe que o elemento <b>h3</b> com <b>visibility: hidden</b>; ocupa o mesmo espaço .</p>
+
+   </main>
+   <hr>
+
+   <footer>
+      &copy; w3schools
+   </footer>
+   <hr>
+
+</body>
+</html>
