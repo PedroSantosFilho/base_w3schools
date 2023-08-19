@@ -1,0 +1,17 @@
+p#asd {
+   text-align: center; /* texto centralizado */
+   background-color: white; /* fundo branco */
+   color: red; /* letras vermelhas */
+}
+
+#para1 {
+   text-align: center; /* texto centralizado */
+   background-color: white; /* fundo branco */
+   color: red; /* letras vermelhas */
+}
+
+.center {
+   text-align: center; /* texto centralizado */
+   background-color: white; /* fundo branco */
+   color: red; /* letras vermelhas */
+}
