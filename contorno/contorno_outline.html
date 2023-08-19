@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contorno CSS</title>
+   <link rel="stylesheet" href="/w3schools/Css/estilo/style.css">
+
+   <style>
+      p#contorno {
+         border: 3px solid white; /* Borda: tamanho 3px tipo sólido cor branca*/
+         outline: red solid 10px; /* contorno: cor vermelho tipo sólido tamanho 10px */
+         margin: 0 200px 20px 100px; /* margem: topo 0, lado esquerdo 200px, parte inferior 20px, lado esquerdo 100px */
+         padding: 10px; /* enchimento 10px */
+         text-align: center; /* alinhamento do texto: centralizado */
+      }
+
+      p {
+         outline-color: black;
+      }
+      
+      p.dotted {outline-style: dotted; outline-width: 8px;}
+      p.dashed {outline-style: dashed;  outline-width: 8px;}
+      p.solid {outline-style: solid;  outline-width: 8px;}
+      p.double {outline-style: double;  outline-width: 8px;}
+      p.groove {outline-style: groove;  outline-width: 8px;}
+      p.ridge {outline-style: ridge; outline-width: 8px;}
+      p.inset {outline-style: inset; outline-width: 8px;}
+      p.outset {outline-style: outset; outline-width: 8px;}
+
+   </style>
+
+</head>
+<body>
+   <header>
+      <h1>Contorno do CSS</h1>
+
+      <p>Um contorno é uma linha desenhada fora da borda do elemento.</p>
+
+      <p id="contorno">Este elemento tem uma borda branca de 3px e um contorno vermelho com largura de 10px.</p>
+
+      <h3>Esplicação:</h3>
+      <pre>
+      <b>p#contorno</b> {
+         <b>border:</b> 3px solid white; /* Borda: tamanho 3px 
+                        tipo sólido cor branca*/
+         <b>outline:</b> red solid 10px; /* contorno: cor vermelho 
+                                 tipo sólido tamanho 10px */
+         <b>margin:</b> 0 200px 20px 100px; /* margem: topo 0, 
+                              lado direito 200px, 
+                              parte inferior 20px, 
+                              lado esquerdo 100px */
+         <b>padding:</b> 10px; /* enchimento 10px */
+         <b>text-align:</b> center; /* alinhamento do texto: 
+                                       centralizado */
+      }</pre>
+   </header>
+   <hr>
+
+   <main>
+      <h2>Contorno do CSS</h2>
+
+      <p>Um contorno é uma linha desenhada ao redor dos elementos, FORA das bordas, para fazer o elemento "se destacar".</p>
+
+      <p>CSS tem as seguintes propriedades de contorno:</p>
+
+      <ul>
+         <li><b>outline-style</b></li>
+         <li><b>outline-color</b></li>
+         <li><b>outline-width</b></li>
+         <li><b>outline-offset</b></li>
+         <li><b>outline</b></li>
+      </ul>
+
+      <p><mark>Observação:</mark> o contorno é diferente das bordas! Ao contrário da borda, o contorno é desenhado fora da borda do elemento e pode se sobrepor a outro conteúdo. Além disso, o contorno NÃO faz parte das dimensões do elemento; a largura e a altura totais do elemento não são afetadas pela largura do contorno.</p>
+      <hr>
+
+      <h2>Estilo de Contorno CSS</h2>
+
+      <p>A propriedade <b>outline-style</b> especifica o estilo do contorno e pode ter um dos seguintes valores:</p>
+
+      <ul>
+         <li><mark>dotted-</mark> Define um contorno pontilhado</li>
+         <li><mark>dashed-</mark> Define um contorno tracejado</li>
+         <li><mark>solid-</mark> Define um contorno sólido</li>
+         <li><mark>double-</mark> Define um contorno duplo</li>
+         <li><mark>groove-</mark> Define um contorno ranhurado 3D</li>
+         <li><mark>ridge-</mark> Define um contorno estriado 3D</li>
+         <li><mark>inset-</mark> Define um contorno de inserção 3D</li>
+         <li><mark>outset-</mark> Define um esboço inicial 3D</li>
+         <li><mark>none-</mark> Não define contorno</li>
+         <li><mark>hidden-</mark> Define um contorno oculto
+      </ul>
+      
+   <pre>
+      &lt;<mark>head</mark>>
+      &lt;<mark>style</mark>>
+         <mark>p</mark> {<mark>outline-color:</mark> red;}
+         
+         <mark>p.dotted</mark> {<mark>outline-style:</mark> dotted;}
+         <mark>p.dashed</mark> {<mark>outline-style:</mark> dashed;}
+         <mark>p.solid</mark> {<mark>outline-style:</mark> solid;}
+         <mark>p.double</mark> {<mark>outline-style:</mark> double;}
+         <mark>p.groove</mark> {<mark>outline-style:</mark> groove;}
+         <mark>p.ridge</mark> {<mark>outline-style:</mark> ridge;}
+         <mark>p.inset</mark> {<mark>outline-style:</mark> inset;}
+         <mark>p.outset</mark> {<mark>outline-style:</mark> outset;}
+      &lt;<mark>/style</mark>>
+      &lt;<mark>/head</mark>>
+      &lt;<mark>body</mark>>
+      
+      &lt;<mark>h2</mark>>The outline-style Property&lt;<mark>/h2</mark>>
+      
+      &lt;<mark>p class=</mark> "dotted">A dotted outline&lt;<mark>/p</mark>>
+      &lt;<mark>p class=</mark> "dashed">A dashed outline&lt;<mark>/p</mark>>
+      &lt;<mark>p class=</mark> "solid">A solid outline&lt;<mark>/p</mark>>
+      &lt;<mark>p class=</mark> "double">A double outline&lt;<mark>/p</mark>>
+      &lt;<mark>p class=</mark> "groove">A groove outline. 
+         <strong>The effect depends on the outline-color value.</strong>&lt;<mark>/p</mark>>
+      &lt;<mark>p class=</mark> "ridge">A ridge outline. 
+         <strong>The effect depends on the outline-color value.</strong>&lt;<mark>/p</mark>>
+      &lt;<mark>p class=</mark> "inset">An inset outline. 
+         <strong>The effect depends on the outline-color value.</strong>&lt;<mark>/p</mark>>
+      &lt;<mark>p class=</mark> "outset">An outset outline. 
+         <strong>The effect depends on the outline-color value.</strong>&lt;<mark>/p</mark>>
+      &lt;<mark>/body</mark>>
+      &lt;<mark>/html</mark>></pre>
+      <hr>
+      
+      <p>O exemplo a seguir mostra os diferentes valores <b>outline-style:</b></p>
+
+      <h3>Exemplo</h3>
+
+      <p>Demonstração dos diferentes estilos de esboço:</p>
+      
+      <h2>A Propriedade outline-style</h2>
+      
+      <pre>
+         <p class= "dotted">A dotted outline</p>
+         <p class= "dashed">A dashed outline</p>
+         <p class= "solid">A solid outline</p>
+         <p class= "double">A double outline</p>
+         <p class= "groove">A groove outline. 
+            The effect depends on the outline-color value.</p>
+         <p class= "ridge">A ridge outline. 
+            The effect depends on the outline-color value.</p>
+         <p class= "inset">An inset outline. 
+            The effect depends on the outline-color value.</p>
+         <p class= "outset">An outset outline. 
+            The effect depends on the outline-color value.</p>
+      </pre>
+
+      <p><mark>Nota:</mark> Nenhuma das outras propriedades do contorno terá QUALQUER efeito, a menos que a propriedade <b>outline-style</b> seja definida!</p>
+
+   </main>
+   <hr>
+
+   <footer>
+      &copy; w3schools CSS
+   </footer>
+   <hr>
+
+</body>
+</html>
